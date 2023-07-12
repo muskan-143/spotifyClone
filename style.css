@@ -1,0 +1,204 @@
+/* Google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+
+/* navigation bar */
+
+nav ul {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: black;
+    color: white;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 0px 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Changing the size of logo */
+
+.brandLogo img {
+    width: 44px;
+}
+
+.brandLogo {
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+    font-size: 1.3rem;
+}
+
+
+/* Song List */
+
+.container {
+    min-height: 65vh;
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 34px auto;
+    padding: 12px;
+    border-radius: 12px;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+}
+
+
+/* Song progress */
+
+.bottom {
+    bottom: 0;
+    background-color: black;
+    position: sticky;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+
+/* adding margin between the icon and the progress bar */
+
+.icons {
+    margin-top: 12px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+
+/* increasing the width of the progress bar */
+
+#progressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+
+/* Making the song list perfect */
+
+.songItem {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+    background-color: white;
+    color: black;
+    border-radius: 33px;
+    padding: 4px 32px;
+}
+
+.songItem img {
+    height: 34px;
+    border-radius: 34px;
+}
+
+#songItemContainer {
+    margin: 75px;
+}
+
+.songInfo {
+    margin-top: 12px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10vw;
+}
+
+#masterPlaySongName {
+    padding: 12px;
+    font-size: 1.4rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.songList {
+    margin-top: 19px;
+    margin-left: 12px;
+}
+
+
+/* hiding the gif of music */
+
+#gif {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+
+/* increasing the size of the play button */
+
+#masterForward:hover {
+    padding: 12px;
+    transform: scale(1.1);
+    margin-left: 2px;
+    color: black;
+    background-color: white;
+}
+
+#masterBackward:hover {
+    padding: 12px;
+    transform: scale(1.1);
+    color: black;
+    background-color: white;
+    margin-right: 2px;
+}
+
+#masterPlay:hover {
+    padding: 12px;
+    transform: scale(1.1);
+    margin-left: 2px;
+    color: black;
+    background-color: white;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.songItemPlay {
+    cursor: pointer;
+}
+
+
+/* Responsiveness */
+
+
+/* @media(max-width: 585px) {
+    body {
+        background-color: violet;
+    }
+    .bottom {
+        height: 145px;
+        min-width: 100%;
+    }
+    .songInfo {
+        display: flex;
+        flex-direction: column;
+        margin-top: 17%;
+        left: 28%;
+    }
+} */

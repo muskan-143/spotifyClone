@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- Header  -->
+    <nav>
+        <div>
+            <ul>
+                <li class="brandLogo"><img src="logo.png" alt="" srcset="">Spotify</li>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Song List -->
+    <div class="container">
+        <div class="songList">
+            <h1>Best of NCC - No copyright sounds.</h1>
+            <div id="songItemContainer">
+                <!-- <div class="songItem">
+                    <img src="10.jpg" alt="" srcset="">
+                    <span> Let me love you</span>
+                    <span class="timespan">5:03 <i class="fa-solid fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="10.jpg" alt="" srcset="">
+                    <span> Let me love you</span>
+                    <span class="timespan">5:03 <i class="fa-solid fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="10.jpg" alt="" srcset="">
+                    <span> Let me love you</span>
+                    <span class="timespan">5:03 <i class="fa-solid fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="10.jpg" alt="" srcset="">
+                    <span> Let me love you</span>
+                    <span class="timespan">5:03 <i class="fa-solid fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="10.jpg" alt="" srcset="">
+                    <span> Let me love you</span>
+                    <span class="timespan">5:03 <i class="fa-solid fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="10.jpg" alt="" srcset="">
+                    <span> Let me love you</span>
+                    <span class="timespan">5:03 <i class="fa-solid fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="10.jpg" alt="" srcset="">
+                    <span> Let me love you</span>
+                    <span class="timespan">5:03 <i class="fa-solid fa-circle-play"></i></span>
+                </div> -->
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <!-- Song playing info -->
+    <div class="bottom">
+        <input type="range" name="range" id="progressBar" value="0" min="0" max="100">
+
+        <!-- font awesome -->
+        <div class="icons">
+            <i class="fa-solid fa-2x fa-backward-step" id="masterBackward"></i>
+            <i class="fa-solid fa-2x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-2x fa-forward-step" id="masterForward"></i>
+        </div>
+
+        <!-- Song info -->
+        <div class="songInfo">
+            <img src="playing.gif" alt="" width="34px" height="34px" id="gif">
+            <div id="masterPlaySongName">Aura - Justin</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
